@@ -1,0 +1,19 @@
+Truck Specs
+
+Truck: Ford F-150
+Year: 2015
+Price: $26,999
+Exterior Color: Tuxedo Black
+Interior Color: Black
+Transmission: Automatic
+Features: 4WD, ABS Brakes, Compass, Electronic Stability Control, Low Tire Pressure Warning, Traction Control
+Fuel Type: Gasoline
+Exterior Color: Tuxedo Black
+City MPG: 17
+Interior Color: Black
+Highway MPG: 23
+Drivetrain: 4WD
+Stock: HWH29878B
+Transmission: 6-Speed Automatic
+Engine: 2.7L V6 24V GDI DOHC Twin Turbo
+Mileage: 49,265 mi
