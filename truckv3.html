@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<head>
+	
+		<meta name="description" content="Trucks for sale">
+		<meta name="keywords" content="HTML,CSS,Trucks,Dealership,Cars">
+		<meta name="author" content="Hunter Powers">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<link rel="stylesheet" href="menuv2.css">
+		<link rel="stylesheet" href="truckSide.css">
+	
+	</head>
+	<body>
+		<div class="nav">
+			<ul>
+				<li><a href="homev2.html">Home</a></li>
+				<li><a href="SUVv2.html">SUV</a></li>
+				<li><a href="sedanv2.html">Sedan</a></li>
+				<li><a href="truckv3.html">Truck</a></li>
+				<li><a href="#">Inventory</a></li>
+			</ul>
+	</div>
+		</br>
+		<center>
+		<h1>Trucks</h1>
+		<h2>2015 Ford F-150</h2>
+		<div class="content">
+			<img src="f150.png" alt="Ford F-150"></img>
+			<div id="specInfo"></div>
+		</center>
+			<div id="trucksidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+				<button id="basics">Basic Info</button></br>
+				<button id="engine">Engine Specs</button></br>
+				<button id="features">Features</button></br>
+				<button id="fuel">Fuel Economy</button></br>
+			</div>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More Info</span>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			function openNav()
+			{
+				document.getElementById("trucksidenav").style.width = "250px";
+			}
+			function closeNav()
+			{
+				document.getElementById("trucksidenav").style.width = "0";
+			}
+			$("#basics").click(function(){
+				$("#specInfo").html("<p>Basic Info</p><li>Year: 2015</li><li>Price: $26,999.00</li><li>Exterior Color: White</li><li>Interior Color: Black</li><li>Mileage: 49,265 mi</li>");
+			});
+			$("#engine").click(function(){
+				$("#specInfo").html("<p>2.7 Liter EcoBoost Engine</p><li>V6</li><li>24 Volt</li><li>Gasoline Direct Injection</li><li>DOHC Twin Turbo</li>");
+			});
+			$("#features").click(function(){
+				$("#specInfo").html("<p>Features:</p><li>4 Wheel Drive</li><li>ABS Brakes</li><li>Compass</li><li>Electronic Stability Control</li><li>Low Tire Pressure Warning</li><li>Traction Control</li><li>6-Speed Automatic Transmission</li>");
+			});
+			$("#fuel").click(function(){
+				$("#specInfo").html("<p>Fuel Economy</p><li>City MPG: 17</li><li>Highway MPG: 23</li>");
+			});
+		</script>
+
+	</body>
+</html>
